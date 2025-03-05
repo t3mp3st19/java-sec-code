@@ -17,11 +17,6 @@ pipeline {
             }
         }
         stage('SRM') {
-            when {
-                anyOf {
-                    environment name: 'FULLSCAN', value: 'true'
-                }
-            }
             steps {
                 security_scan product: 'srm',
                     srm_assessment_types: 'SAST,SCA',
