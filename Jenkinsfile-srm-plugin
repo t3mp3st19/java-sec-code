@@ -6,7 +6,10 @@ pipeline {
         REPO_NAME = "${env.GIT_URL.tokenize('/.')[-2]}"
         FULLSCAN = "${env.BRANCH_NAME ==~ /^(main|master|develop|stage|release)$/ ? 'true' : 'false'}"
     }
-
+ tools {
+        maven 'maven-3.9'
+        jdk 'openjdk-17'
+    }
     stages {
         stage('Build') {
             steps {
