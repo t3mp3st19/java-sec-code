@@ -16,8 +16,8 @@ pipeline {
             steps {
                 security_scan product: 'srm',
                     srm_assessment_types: 'SCA',
-                    srm_project_name: "Java-Sec-Code-CC",
-                    srm_branch_name: "main"
+                    srm_project_name: "javasec",
+                    srm_branch_name: "v1"
             }
         }
     }
