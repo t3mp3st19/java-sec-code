@@ -6,12 +6,12 @@
 name: bd+coverity+srm
 on:
   push:
-    branches: [ main, master, develop, stage, release, v1 ]
+    branches: [ main, master, develop, stage, release, v1, v2 ]
   pull_request:
-    branches: [ main, master, develop, stage, release, v1 ]
+    branches: [ main, master, develop, stage, release, v1, v2 ]
   workflow_dispatch:
 jobs:
-  synopsys:
+  blackduck:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Source
