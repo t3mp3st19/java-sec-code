@@ -46,6 +46,7 @@ jobs:
         coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
         # coverity_policy_view: ${{ github.event_name != 'pull_request' && 'Outstanding Issues' || '' }}
         coverity_prComment_enabled: true
+        coverity_local: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
         # include_diagnostics: true
     - name: SRM Import
