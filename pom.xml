@@ -327,7 +327,7 @@
         <dependency>
             <groupId>org.xmlbeam</groupId>
             <artifactId>xmlprojector</artifactId>
-            <version>1.4.13</version>
+            <version>1.4.24</version>
         </dependency>
 
         <!-- CVE-2022-21724 -->
